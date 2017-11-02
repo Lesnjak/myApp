@@ -73,7 +73,7 @@ $('.image article div ').on('click',function () {
 
     ///////////////validation form and add agree block////////////////////////////////////
 
-$('form button').on('click',function (e) {
+$('form .send').on('click',function (e) {
     e.preventDefault();
     var pattern = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
@@ -123,7 +123,12 @@ $('form button').on('click',function (e) {
     }
 
 })
+    $('form .exit').on('click',function (e) {
+     e.preventDefault();
+        $('header span').text('');
 
+
+    })
 ///////////////////////////////////header add name///////////////////////////////
 
     $('header span').text(nameReal);

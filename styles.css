@@ -89,7 +89,7 @@ p {
 }
 
 input[type='checkbox']:checked + .dvs-wrapper {
-    transform: translateY(375px);
+    transform: translateY(380px);
 }
 
 input[type='checkbox']:checked + .dvs-wrapper:hover {
@@ -310,7 +310,7 @@ label, a {
 
 /*////////////////end slider//////////////*/
 
-/*////////////////comments///////////////////////*/
+/*////////////////comments block///////////////////////*/
 
 .descriptions {
     display: flex;
@@ -325,7 +325,7 @@ label, a {
     overflow: hidden;
     transition: height 1s;
     height: 0;
-    max-height: 500px;
+    max-height: 600px;
 
 }
 
