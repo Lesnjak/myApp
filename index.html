@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>myApp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="library/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1><span></span>Сделайте выбор</h1>
+</header>
+<section>
+    <div class="all">
+        <article id="slider">
+            <input checked type="radio" name="slider" id="switch1">
+            <input type="radio" name="slider" id="switch2">
+            <input type="radio" name="slider" id="switch3">
+            <input type="radio" name="slider" id="switch4">
+            <input type="radio" name="slider" id="switch5">
+            <div id="slides">
+                <div id="overflow">
+                    <div class="image">
+                        <article>
+                            <div>Огурцы</div>
+                            <img src="img/ogurtsy-kornishony-461x284.jpg.pagespeed.ce.ilA-ShmcOn.jpg"></article>
+                        <article>
+                            <div>Курочка</div>
+                            <img src="img/tsyplenok-tabaka-461x284.jpg.pagespeed.ce.P_nf4q-M96.jpg"></article>
+                        <article>
+                            <div>Морковь</div>
+                            <img src="img/morkov-po-koreyski-461x284.jpg.pagespeed.ce.sLRqdRiBVx.jpg"></article>
+                        <article>
+                            <div>Голубцы</div>
+                            <img src="img/golubtsy-461x284.jpg.pagespeed.ce.h6r2RySu45.jpg"></article>
+                        <article>
+                            <div>Рагу</div>
+                            <img src="img/ikra-461x284.jpg.pagespeed.ce.HqxtnKmDCR.jpg"></article>
+                        <article>
+                            <div>Капуста</div>
+                            <img src="img/kapusta-kvashenaya-461x284.jpg.pagespeed.ce.rKmhFkYXjj.jpg"></article>
+                        <article>
+                            <div>Голубцы</div>
+                            <img src="img/golubtsy-461x284.jpg.pagespeed.ce.h6r2RySu45.jpg"></article>
+                        <article>
+                            <div>Баклажаны</div>
+                            <img src="img/ogonek-461x284.jpg.pagespeed.ce.K_xVjYNLez.jpg"></article>
+                        <article>
+                            <div>Гриль</div>
+                            <img src="img/ovoshchi-461x284.jpg.pagespeed.ce.VSNlAjgua1.jpg"></article>
+                        <article>
+                            <div>Перец</div>
+                            <img src="img/perets-,P28tsitsak,P29-461x284.jpg.pagespeed.ce.VfltwtuIxN.jpg"></article>
+                        <article>
+                            <div>Помидор кр.</div>
+                            <img src="img/pomidor-konservirovannyy-201x130.jpg.pagespeed.ce.8u4JLYK67O.jpg"></article>
+                        <article>
+                            <div>Помидор зл.</div>
+                            <img src="img/pomidor-solenyy-461x284.jpg.pagespeed.ce.YLB8cCI584.jpg"></article>
+                        <article>
+                            <div>Грибы</div>
+                            <img src="img/shampinony-marinovannye-461x284.jpg.pagespeed.ce.7CFKFb_M9K.jpg"></article>
+                        <article>
+                            <div>Яишница</div>
+                            <img src="img/sote-201x130.jpg.pagespeed.ce.uD2qE6Pqex.jpg"></article>
+                        <article>
+                            <div>Помидор</div>
+                            <img src="img/pomidor-konservirovannyy-201x130.jpg.pagespeed.ce.8u4JLYK67O.jpg"></article>
+                    </div>
+                </div>
+            </div>
+            <div id="controls">
+                <label for="switch1"></label>
+                <label for="switch2"></label>
+                <label for="switch3"></label>
+                <label for="switch4"></label>
+                <label for="switch5"></label>
+            </div>
+            <div id="active">
+                <label for="switch1"></label>
+                <label for="switch2"></label>
+                <label for="switch3"></label>
+                <label for="switch4"></label>
+                <label for="switch5"></label>
+            </div>
+        </article>
+
+    </div>
+</section>
+<div class="form">
+    <input id="g" type="checkbox" checked>
+    <div class="dvs-wrapper">
+        <div class="dws-container">
+            <label for="g" class="g">Вход/Регистрация</label>
+            <form class="formBox">
+                <div class="disNone">
+                    <div class="inputBox ">
+                        <label for="a" class="labelText">Ваше имя </label>
+                        <input id="a" name="name" class="userInput" type="text" required>
+                    </div>
+
+                    <div class="inputBox ">
+                        <label for="b" class="labelText">Email</label>
+                        <input id="b" class="userInput" name="gender" type="text" required>
+                    </div>
+
+                    <div class="inputBox ">
+                        <label for="c" class="labelText">Номер телефона</label>
+                        <input id="c" class="userInput" name="designation" type="number" required>
+                    </div>
+
+                    <div class="inputBox error">
+                        <input class="floatLeft" type="checkbox" checked>
+                        <label class="floatLeft">Я согласен на обработку моих <a href="#">персональных
+                            данных</a></label>
+
+                    </div>
+                    <button>Отправить</button>
+                </div>
+                <div class="agree">
+                    <p></p>
+                    <input type="button" value="выйти">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="descriptions">
+    <i class="fa fa-times-circle" aria-hidden="true"></i>
+    <div class="img">
+        <p>Огурцы</p>
+        <img src="img/ogurtsy-kornishony-461x284.jpg.pagespeed.ce.ilA-ShmcOn.jpg" alt="">
+        <p>Рецепт</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto delectus et minus mollitia nesciunt
+            perspiciatis provident quas, quos voluptatibus. Ad, atque cumque dolorem ducimus eligendi odio placeat quia
+            sunt voluptas.</p>
+    </div>
+
+
+    <div class="comments">
+        <div class="star-rating">
+            <fieldset>
+                <input type="radio" id="star5" name="rating" value="5"/><label for="star5" title="Outstanding">5
+                stars</label>
+                <input type="radio" id="star4" name="rating" value="4"/><label for="star4" title="Very Good">4
+                stars</label>
+                <input type="radio" id="star3" name="rating" value="3"/><label for="star3" title="Good">3 stars</label>
+                <input type="radio" id="star2" name="rating" value="2"/><label for="star2" title="Poor">2 stars</label>
+                <input type="radio" id="star1" name="rating" value="1"/><label for="star1" title="Very Poor">1
+                star</label>
+            </fieldset>
+        </div>
+        <div class="text">
+            <textarea></textarea>
+            <p class="redText">Вы не ввели комментарий!!!</p>
+            <button>Добавить комментарий</button>
+        </div>
+        <div class="prevComments">
+            <p>Reviews</p>
+            <ul>
+            </ul>
+        </div>
+    </div>
+    <!--<script src="library/angular.min.js"></script>-->
+    <!--<script src="library/ngStorage.min.js"></script>-->
+    <script src="library/jquery.min.js"></script>
+    <script src="library/jquery.backgroundvideo.min.js"></script>
+    <script src="common.js"></script>
+</body>
+</html>

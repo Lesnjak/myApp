@@ -1,0 +1,496 @@
+/*////////////////register form/////////////*/
+body {
+    font-family: sans-serif;
+}
+
+p {
+    font-size: 18px;
+    color: #a5a5a5;
+}
+
+.dvs-wrapper {
+    position: fixed;
+    bottom: 0;
+    right: 10%;
+    transition: 1s;
+    z-index: 1;
+
+}
+
+.dws-container {
+    width: 350px;
+    overflow: hidden;
+}
+
+.formBox {
+    padding: 30px;
+    border: 4px solid #C3A173;
+    background: #fff;
+    box-sizing: border-box;
+
+}
+
+.dws-container .g {
+    background: #C3A173;
+    display: block;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    font-size: 24px;
+    padding: 10px 0;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    width: 85%;
+}
+
+.agree {
+    text-align: center;
+    padding-top: 40px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.inputBox {
+    position: relative;
+    margin: 0 0 20px;
+    font-size: 20px;
+    color: #a5a5a5;
+
+}
+
+.formBox .name {
+    margin: auto;
+    color: red;
+
+}
+
+.labelText {
+    position: absolute;
+    font-size: 18px;
+    color: #a5a5a5;
+    line-height: 55px;
+    transition: .5s;
+}
+
+.userInput {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    color: #575454;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #a5a5a5;
+}
+
+.focus .labelText {
+    transform: translateY(-35px);
+    font-size: 14px;
+    color: #C3A173;
+}
+
+input[type='checkbox']:checked + .dvs-wrapper {
+    transform: translateY(375px);
+}
+
+input[type='checkbox']:checked + .dvs-wrapper:hover {
+    transform: translateY(350px);
+}
+
+#g {
+    display: none;
+
+}
+
+/*//////////////end register form//////////////*/
+
+/*//////////////header///////////////////////*/
+header {
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+header h1 {
+    font-size: 60px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: #C3A173 1px 0px, #C3A173 1px 1px, #C3A173 0px 1px, #C3A173 -1px 1px, #C3A173 -1px 0px, #C3A173 -1px -1px, #C3A173 0px -1px, #C3A173 1px -1px, #C3A173 0 0 3px, #C3A173 0 0 3px, #C3A173 0 0 3px, #C3A173 0 0 3px, #C3A173 0 0 3px, #C3A173 0 0 3px, #C3A173 0 0 3px, #C3A173 0 0 3px;
+
+}
+
+header span {
+    margin-right: 20px;
+}
+
+/*//////////////end header//////////////////*/
+
+/*////////////////slider////////////*/
+.all {
+    transition: 1s;
+}
+
+#slider {
+    position: relative;
+    text-align: center;
+    top: 80px;
+}
+
+#slider {
+    margin: 0 auto;
+}
+
+#slides article {
+    width: 6%;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 5px solid #C3A173;
+    cursor: pointer;
+    position: relative;
+}
+
+#slides .image {
+    width: 500%;
+    line-height: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image article div {
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    line-height: 100%;
+    padding-top: 0;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+
+}
+
+.image article:hover div {
+    height: 100%;
+    padding-top: 45%;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+.image article {
+    background-color: #fff;
+
+}
+
+.image article img {
+    width: 100%;
+    margin-top: 17%;
+    margin-bottom: 17%;
+
+}
+
+#slider {
+    max-width: 50%;
+}
+
+
+#switch1:checked ~ #controls label:nth-child(5),
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3),
+#switch5:checked ~ #controls label:nth-child(4) {
+    background: url('img/prev.png') no-repeat;
+    float: left;
+    margin: 30px 0 0 -84px;
+    display: block;
+    height: 68px;
+    width: 68px;
+
+}
+
+
+#switch1:checked ~ #controls label:nth-child(2),
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4),
+#switch4:checked ~ #controls label:nth-child(5),
+#switch5:checked ~ #controls label:nth-child(1) {
+    background: url('img/next.png') no-repeat;
+    float: right;
+    margin: 30px -84px 0 0;
+    display: block;
+    height: 68px;
+    width: 68px;
+
+}
+
+label, a {
+    cursor: pointer;
+}
+
+.all input {
+    display: none;
+}
+
+#switch1:checked ~ #slides .image {
+    margin-left: 0;
+}
+
+#switch2:checked ~ #slides .image {
+    margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .image {
+    margin-left: -200%;
+}
+
+#switch4:checked ~ #slides .image {
+    margin-left: -300%;
+}
+
+#switch5:checked ~ #slides .image {
+    margin-left: -400%;
+}
+
+#controls {
+    margin: -25% 0 0 0;
+    width: 100%;
+    height: 50px;
+}
+
+#active label {
+    border-radius: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 2px solid #C3A173;
+
+}
+
+#active {
+    margin: 23% 0 0;
+    text-align: center;
+}
+
+#active label:hover {
+    background: #76c8ff;
+    border-color: #777 !important;
+}
+
+/*цвет активного лейбла при активации чекбокса*/
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3),
+#switch4:checked ~ #active label:nth-child(4),
+#switch5:checked ~ #active label:nth-child(5) {
+    background: #C3A173;
+
+}
+
+#slides .image {
+    transition: all 800ms ease-in;
+}
+
+#controls label:hover {
+    opacity: 0.6;
+}
+
+#controls label {
+    transition: opacity 0.2s ease-out;
+}
+
+/*////////////////end slider//////////////*/
+
+/*////////////////comments///////////////////////*/
+
+.descriptions {
+    display: flex;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 200px;
+    background-color: #fff;
+    border: 2px solid #C3A173;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: height 1s;
+    height: 0;
+    max-height: 500px;
+
+}
+
+.descriptions .img {
+    width: 50%;
+    padding: 20px;
+}
+
+.descriptions .comments {
+    width: 50%;
+    padding: 20px;
+}
+
+.descriptions .text textarea {
+    width: 90%;
+    border: 2px solid #a5a5a5;
+    border-radius: 5px;
+    min-height: 60px;
+    padding: 10px;
+
+}
+
+.descriptions .text textarea:focus {
+    outline: none;
+}
+
+.redText {
+    margin: 0;
+    color: #C3A173;
+    margin-bottom: 5px;
+    display: none;
+}
+
+.descriptions img {
+    border: 3px solid #a5a5a5;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.prevComments {
+    text-align: left;
+    max-height: 450px;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+
+}
+
+.prevComments::-webkit-scrollbar {
+    width: 0;
+}
+
+.prevComments > p {
+    position: relative;
+    margin: auto;
+    width: 70px;
+    padding-top: 20px;
+}
+
+.prevComments > p:before {
+    position: absolute;
+    content: '';
+    width: 250px;
+    height: 1px;
+    background-color: #a5a5a5;
+    bottom: -5px;
+    left: -80px;
+}
+
+.prevComments ul li {
+    list-style: none;
+    border: 3px solid #a5a5a5;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.prevComments ul {
+    margin: 20px 0 0 0;
+    padding: 0;
+
+}
+
+.prevComments ul li p:nth-child(1) {
+    font-size: 12px;
+    margin: 5px;
+}
+
+.prevComments ul li p:nth-child(2) {
+    font-size: 10px;
+    margin: 5px;
+}
+
+.prevComments ul li p:nth-child(3) {
+    font-size: 12px;
+    margin: 5px;
+    border-bottom: 1px solid #a5a5a5;
+}
+
+.prevComments ul li p:nth-child(4) {
+    font-size: 10px;
+    margin: 5px;
+}
+
+.fa-times-circle {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 30px;
+    color: #a5a5a5;
+    cursor: pointer;
+}
+
+/*/////////////////end comments//////////////////////*/
+
+/*///////////////////stars/////////////////////*/
+.star-rating {
+    font-family: 'FontAwesome';
+
+}
+
+.star-rating > fieldset {
+    border: none;
+    display: inline-block;
+}
+
+.star-rating > fieldset:not(:checked) > input {
+    position: absolute;
+    top: -9999px;
+    clip: rect(0, 0, 0, 0);
+}
+
+.star-rating > fieldset:not(:checked) > label {
+    float: right;
+    width: 1em;
+    padding: 0 .05em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 200%;
+    color: #C3A173;
+}
+
+.star-rating > fieldset:not(:checked) > label:before {
+    content: '\f006  ';
+}
+
+.star-rating > fieldset:not(:checked) > label:hover, .star-rating > fieldset:not(:checked) > label:hover ~ label {
+    color: #C3A173;
+    text-shadow: 0 0 3px #C3A173;
+}
+
+.star-rating > fieldset:not(:checked) > label:hover:before, .star-rating > fieldset:not(:checked) > label:hover ~ label:before {
+    content: '\f005  ';
+}
+
+.star-rating > fieldset > input:checked ~ label:before {
+    content: '\f005  ';
+}
+
+.star-rating > fieldset > label:active {
+    position: relative;
+    top: 2px;
+}
+
+/*///////////////////end stars/////////////////////*/
